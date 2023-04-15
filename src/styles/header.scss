@@ -1,0 +1,275 @@
+@import "./_constants";
+
+.header {
+  color: $accent;
+  background: linear-gradient($complimentary, $primary);
+  visibility: hidden;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 23px;
+  }
+
+  .header-wrapper {
+    background: url("./../images/official/official-white-cropped.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px;
+
+      @include tablet {
+        padding: 17px 25px;
+        font-size: 20px;
+      }
+
+      @include large-desktop {
+        padding: 1% 2%;
+        // font-size: 1.7em;
+        // font-size: 180%;
+        font-size: 2vw;
+      }
+
+      figcaption {
+        font-family: $Pacifico;
+        font-weight: bold;
+      }
+      #ham {
+        @include tablet {
+          display: none;
+        }
+        .div1,
+        .div2,
+        .div3 {
+          background: $accent;
+          height: 3px;
+          width: 27px;
+          margin-bottom: 3px;
+        }
+      }
+
+      #slider {
+        background: $black;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -70vw;
+        z-index: 10;
+        width: 70vw;
+        transition: 0.5s ease;
+
+        @include tablet {
+          background: inherit;
+          position: static;
+          transition: unset;
+          width: unset;
+          z-index: unset;
+        }
+
+        #cross {
+          position: relative;
+          margin: 10% 10px 15px 85%;
+
+          @include tablet {
+            display: none;
+          }
+          .div1,
+          .div2 {
+            background: $accent;
+            height: 3px;
+            width: 27px;
+            margin-bottom: 3px;
+          }
+
+          .div1 {
+            transform: rotate(45deg);
+          }
+          .div2 {
+            transform: rotate(-45deg) translate(3.5px, -4px);
+          }
+        }
+
+        .ul-container {
+          // background: black;
+          padding: 10px;
+          margin-top: 60px;
+
+          @include tablet {
+            background: inherit;
+            margin-top: unset;
+            padding: unset;
+          }
+
+          ul {
+            padding: 0px 10%;
+            font-style: italic;
+
+            @include tablet {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding-left: 1px;
+            }
+
+            li {
+              list-style-type: none;
+              margin: 10px;
+              text-align: center;
+              cursor: pointer;
+              border: 1px solid $black;
+              padding: 5px;
+
+              &:nth-child(4) {
+                border-top-width: 1px;
+                border-top-color: $accent;
+                padding-top: 10px;
+
+                @include tablet {
+                  border-top-color: $complimentary;
+                  border-left-width: 1px;
+                  border-left-color: $accent;
+                  padding-top: 5px;
+                }
+              }
+
+              &:hover {
+                border-color: $primary;
+              }
+
+              @include tablet {
+                border: 1px solid $complimentary;
+                text-align: unset;
+                margin: auto auto auto 12px;
+              }
+
+              @include desktop {
+                text-align: unset;
+                margin: auto auto auto 25px;
+              }
+
+              @include large-desktop {
+                margin: auto 1vw auto;
+              }
+
+              a {
+                color: $accent;
+                font-family: $Roboto;
+                text-decoration: none;
+
+                @include tablet {
+                  color: $accent;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .hero-wrapper {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile-landscape {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          width: 100%;
+          padding: 20px 65px;
+        }
+
+        @include tablet {
+          padding: 60px 85px;
+        }
+
+        @include large-desktop {
+          padding: 7% 10%;
+          // font-size: 170%;
+          font-size: 2vw;
+        }
+
+        .header-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          font-style: italic;
+          position: relative;
+          z-index: 2;
+
+          @include mobile-landscape {
+            text-align: left;
+            align-items: flex-start;
+            // width: 290px;
+            // width: 70%;
+          }
+
+          @include tablet {
+            // width: 60%;
+          }
+
+          .heading {
+            margin: 50px auto 15px;
+          }
+          .subheading {
+          }
+
+          a {
+            color: $black;
+            background: $accent;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 2px 2px 5px $complimentary;
+
+            @include large-desktop {
+              padding: 2% 4%;
+              margin: 3% 0;
+            }
+          } // a
+        }
+
+        .img {
+          width: 200px;
+          margin-top: 20px;
+          position: relative;
+          z-index: 5;
+
+          @include tablet {
+            width: 220px;
+            margin: 25px;
+          }
+
+          @include desktop {
+            width: 290px;
+          }
+
+          @include large-desktop {
+            width: 60%;
+          }
+        }
+      } //wrapper
+    } //hero
+  }
+}

@@ -1,0 +1,36 @@
+@import "./_constants";
+
+.call_to_action {
+  color: $black;
+  padding: 32px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile-landscape {
+    padding: 50px 0px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      @include desktop {
+        font-size: 25px;
+      }
+    }
+    a {
+      color: $accent;
+      background: $complimentary;
+      text-shadow: 0px 0px 5px $black;
+      text-decoration: none;
+      font-family: Roboto;
+      font-weight: bolder;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }
+}

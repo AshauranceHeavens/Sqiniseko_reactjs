@@ -1,0 +1,57 @@
+.contacts-page-container {
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #1e1c1c;
+  background-color: #f88383;
+  transform: skewY(-2deg);
+  padding: 40px 20px;
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    .contacts-page-container {
+      font-size: 20px; } }
+  .contacts-page-container .form-container {
+    transform: skewY(2deg); }
+    .contacts-page-container .form-container form {
+      margin: 0px 20px; }
+      @media only screen and (min-width: 650px) {
+        .contacts-page-container .form-container form .form-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          padding: 0px 40px; } }
+      @media only screen and (min-width: 1024px) {
+        .contacts-page-container .form-container form .form-grid {
+          padding: 0px 60px; } }
+      @media only screen and (min-width: 650px) {
+        .contacts-page-container .form-container form .form-div {
+          padding: 0px 5%;
+          margin: 10px auto; } }
+      .contacts-page-container .form-container form .input-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden; }
+        .contacts-page-container .form-container form .input-container .label,
+        .contacts-page-container .form-container form .input-container .input {
+          margin: 2px 0px;
+          border-radius: 5px;
+          padding: 5px 0px;
+          border: none;
+          width: 100%; }
+        .contacts-page-container .form-container form .input-container .input {
+          color: #1e1c1c;
+          padding: 5px 5px;
+          font-weight: bold;
+          height: 40px; }
+        .contacts-page-container .form-container form .input-container .input[type="file"] {
+          color: #1e1c1c; }
+        .contacts-page-container .form-container form .input-container textarea {
+          height: 140px !important; }
+      .contacts-page-container .form-container form .button {
+        padding: 10px 20px;
+        margin: 10px auto;
+        background: #51d88b;
+        color: #fff;
+        text-shadow: 0px 0px 3px #1e1c1c; }
+
+/*# sourceMappingURL=Contacts.css.map */

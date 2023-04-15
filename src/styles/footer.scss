@@ -1,0 +1,53 @@
+@import "./_constants";
+
+.footer {
+  font-family: $Montserrat;
+
+  @include desktop {
+    font-size: 1.5em;
+  }
+  
+  @include large-desktop {
+    font-size: 1.7em;
+  }
+
+  .footer-container {
+    // background: linear-gradient(#4c1a77, $complimentary);
+    background: #4c1a77;
+    text-align: center;
+    padding: 20px 0;
+
+    ul li {
+      margin: 2px 5px;
+      list-style-type: none;
+
+      @include desktop {
+        margin: 1.2%;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        img {
+          // width: 30px;
+          width: 1em;
+          margin: 0px 5px;
+        }
+      }
+
+      a {
+        color: $accent;
+        text-decoration: none;
+      }
+    }
+
+    p {
+      color: $accent;
+      padding: 10px 0px;
+      a {
+        color: $accent;
+        text-decoration: none;
+      }
+    }
+  }
+}

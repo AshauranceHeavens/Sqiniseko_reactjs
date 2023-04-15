@@ -1,0 +1,661 @@
+@import "./_constants";
+
+.call_to_action {
+  color: $accent;
+  background: $complimentary;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bolder;
+  font-family: $Roboto;
+
+  &:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+#main {
+  color: $black;
+  background: $accent;
+  font-family: $Montserrat;
+  // font-size: 19px;
+  position: relative;
+  z-index: 4;
+  margin-top: -10px !important;
+
+  @include mobile-landscape {
+    padding-top: 40px;
+  }
+
+  @include tablet {
+    // padding-top: 110px;
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 23px;
+  }
+
+  @include large-desktop {
+    font-size: 2vw;
+    margin-top: -40px !important;
+  }
+
+  .main-container {
+    .section {
+      // &:after {
+      //   content: "";
+      //   display: inline-block;
+      //   position: relative;
+      //   width: 100vw;
+      //   height: 30vw;
+      //   background: url("./../images/small-path.svg");
+      //   background-position: center;
+      //   background-repeat: no-repeat;
+      //   background-size: contain;
+      // }
+      .section_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+
+        @include mobile-landscape {
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          padding: 10px 66px;
+        }
+
+        .text {
+          padding: 20px;
+          text-align: center;
+
+          @include mobile-landscape {
+            text-align: left;
+            margin-left: 30px;
+            padding: 0;
+          }
+
+          @include large-desktop {
+            padding: 5% 10%;
+          }
+
+          h2 {
+            margin: 18px auto;
+            text-align: center;
+            font-weight: bold;
+            line-height: 37px;
+
+            @include mobile-landscape {
+              text-align: left;
+              line-height: 35px;
+            }
+          }
+
+          p {
+            line-height: 29px;
+          }
+
+          a {
+            @extend .call_to_action;
+
+            @include large-desktop {
+              padding: 2%;
+              margin-top: 2%;
+              border-radius: 0.5em;
+            }
+          }
+        }
+      }
+    }
+    .section2 {
+      background: url("./../images/official/official-purple-cropped.svg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      .section_wrapper {
+        @include mobile-landscape {
+          padding-bottom: 110px;
+        }
+
+        @include tablet {
+          padding-bottom: 20%;
+        }
+
+        .text {
+          p {
+            @include desktop {
+              line-height: 39px;
+            }
+            @include large-desktop {
+              line-height: 162%;
+            }
+          }
+
+          h2 {
+            @include desktop {
+              line-height: 49px;
+            }
+            @include large-desktop {
+              line-height: 122%;
+            }
+          }
+        }
+      }
+    }
+
+    .section3 {
+      background: linear-gradient($primary, $complimentary);
+      color: $accent;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 3;
+      margin-top: -10px !important;
+
+      @include mobile-landscape {
+        margin-top: -115px;
+      }
+      @include tablet {
+        padding: 0px;
+      }
+
+      @include large-desktop {
+        margin-top: -18%;
+        height: unset;
+        // background: green;
+      }
+
+      h2 {
+        margin: 0px auto 20px;
+        padding: 10px 0 0 0;
+      }
+      .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablet {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 25px;
+          padding: 0px 40px;
+        }
+
+        @include large-desktop {
+          margin-top: 9%;
+          grid-column-gap: 5%;
+          padding: 0px 7%;
+        }
+
+        .box {
+          background: $accent;
+          color: $black;
+          padding: 10px 60px;
+          margin: 20px;
+          border-radius: 5px;
+          width: 100%;
+
+          @include tablet {
+            height: 320px;
+            height: 100%;
+            // padding: 35px 20px;
+            padding: 20% 15%;
+            margin: 40px 0px -30px;
+            border-radius: 35px 35px 0 0;
+          }
+
+          @include desktop {
+            // padding: 35px 40px;
+            padding: 30% 15%;
+            margin: 40px 0px -20px;
+            border-radius: 10% 10% 0 0;
+          }
+
+          @include large-desktop {
+            height: unset;
+            height: 100%;
+            padding: 20% 20%;
+            margin: 0;
+          }
+
+          h3 {
+            margin: 20px auto;
+            color: $primary;
+            font-weight: bolder;
+
+            @include large-desktop {
+              margin: 15% auto;
+            }
+          }
+
+          p {
+            margin: 20px auto;
+            line-height: 23px;
+
+            @include large-desktop {
+              line-height: 115%;
+            }
+          }
+        }
+      }
+    }
+
+    .languages {
+      padding: 25px 0px;
+
+      @include tablet {
+        margin: 7% auto;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 10px auto 40px;
+        color: $complimentary;
+        font-weight: bold;
+      }
+
+      .languages-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .languages-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, 100px);
+          justify-content: center;
+          align-items: center;
+          padding: 10px 20px;
+          gap: 10px;
+
+          @include mobile-landscape {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10%;
+          }
+
+          @include tablet {
+            gap: 10%;
+            margin: 40px 50px 40px;
+          }
+
+          @include desktop {
+            padding: 5%;
+          }
+
+          .language {
+            width: 90px;
+            margin: 10px auto;
+
+            @include desktop {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+
+    .features {
+      margin: 50px auto;
+      padding: 40px auto;
+
+      h2 {
+        color: $complimentary;
+        text-align: center;
+        margin: 30px auto;
+      }
+
+      .grid-container {
+        .grid-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @include tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            overflow: hidden;
+            margin: 70px auto;
+          }
+
+          @include desktop {
+            margin: 10% auto;
+          }
+
+          img {
+            width: 200px;
+            margin: 20px auto;
+
+            @include desktop {
+              // width: 300px;
+              width: 40%;
+            }
+          }
+
+          .text {
+            background: $primary;
+            color: $accent;
+            text-align: center;
+            margin: 40px 20px;
+            padding: 30px 20px;
+            border-radius: 5px;
+            width: 95%;
+
+            @include tablet {
+              width: unset;
+              margin-left: -20px;
+              padding: 30px 65px;
+              grid-row: 1/2;
+            }
+
+            @include desktop {
+              padding: 10%;
+            }
+
+            @include large-desktop {
+              border-radius: 0 2% 2% 0;
+              
+            }
+
+            h3 {
+              font-weight: bolder;
+              margin: 15px auto 30px;
+
+              @include desktop {
+                margin: 2% auto 5%;
+              }
+            }
+          }
+        }
+        .even {
+          img {
+            // border-radius: 45px 175px 45px 45px;
+            @include tablet {
+              grid-row: 1/2;
+            }
+          }
+          .text {
+            background: $complimentary;
+
+            @include tablet {
+              margin-right: -20px;
+            }
+
+            @include large-desktop {
+              border-radius: 2% 0 0 2%;
+              
+            }
+          }
+        }
+      }
+    }
+
+    .benefits {
+      text-align: center;
+      margin: 40px auto;
+      color: $accent;
+
+      @include tablet {
+        margin: 100px auto;
+      }
+
+      @include desktop {
+        margin: 10% auto;
+      }
+
+
+      h2 {
+        color: $complimentary;
+        font-weight: bolder;
+        padding: 0px 35px;
+        margin: 20px auto 40px;
+      }
+
+      .steps {
+        background: linear-gradient($complimentary, $primary);
+        border-radius: 5px;
+        margin: 20px;
+
+        @include tablet {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include desktop {
+          margin: 5% 5%;
+        }
+
+        @include large-desktop {
+          border-radius: 15px;
+          
+        }
+
+        .step {
+          padding: 30px 20px;
+          border-radius: inherit;
+
+          @include tablet {
+            padding: 60px 40px;
+          }
+
+          @include desktop {
+            padding: 20% 10%;
+          }
+
+          @include large-desktop {
+            padding: 25% 15%;
+          }
+
+          &:hover {
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+          }
+
+          h3 {
+            margin: 10px;
+
+            @include tablet {
+              margin: 20px;
+            }
+          }
+        }
+        .step1{
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          
+          @include tablet{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;  
+          }
+        }
+        .step2{
+          border-radius: 0;
+        }
+
+        .step3{
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+
+          @include tablet{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;  
+          }
+        }
+      }
+    }
+
+    .projects {
+      margin: 20px auto;
+      text-align: center;
+
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include desktop {
+        margin: 10% auto 5%;
+      }
+
+      h2 {
+        color: $complimentary;
+        padding: 10px 30px;
+
+        @include tablet {
+          padding: 20px 95px 60px;
+        }
+      }
+
+      .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+
+        @include tablet {
+          display: grid;
+          grid-template-columns: repeat(2, 250px);
+          grid-row-gap: 30px;
+        }
+
+        @include desktop {
+          grid-template-columns: repeat(4, 250px);
+          margin: 5% 0%;
+          padding: 0 10%;
+          // width: 100%;
+        }
+
+        @include large-desktop {
+          grid-template-columns: repeat(4, 3fr);
+          grid-column-gap: 3%;
+          margin-left: -3%;
+        }
+
+        .project {
+          width: 200px;
+          height: 200px;
+          background: linear-gradient($primary, $complimentary);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          overflow: hidden;
+          margin: 10px auto;
+          border-radius: 5px;
+          
+          @include large-desktop {
+            width: 17vw;
+            height: 17vw;
+            border-radius: 15px;
+          }
+
+          &:hover {
+            .overlay {
+              top: 0;
+            }
+          }
+
+          .overlay {
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            position: relative;
+            top: 100%;
+            transition: 0.5s ease;
+
+            a {
+              color: $accent;
+              // background: red;
+              display: block;
+              padding: 90px 0px;
+              font-weight: bold;
+
+              @include tablet {
+                padding: 40% 0px;
+              }
+            }
+          }
+        }
+        .project1 {
+          background: url("./../images/projects/theoffcampus.jpeg");
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+        }
+        .project2 {
+          background: url("./../images/projects/taxifare.png");
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+        }
+        .project3 {
+          background: url("./../images/projects/zamazungu.png");
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+        }
+        .project4 {
+          background: url("./../images/projects/nelisiwe.jpg");
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px auto;
+      padding: 20px 20px;
+
+      @include mobile-landscape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include desktop {
+        padding: 0% 10% 5%;
+      }
+
+      h2 {
+        margin: 20px auto;
+        padding: 0px 30px;
+      }
+      .cta_wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @include mobile-landscape {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        @include large-desktop {
+          justify-content: space-around;
+          width: 90%;
+          margin-top:5%;
+        }
+
+        h3 {
+          @include mobile-landscape {
+            margin: 20px 30px;
+          }
+        }
+
+        a {
+          @extend .call_to_action;
+
+          @include large-desktop {
+            padding: 2% 4%;
+            border-radius: 1vw;
+            // margin: 2% 25%;
+          }
+        }
+      }
+    }
+  }
+}

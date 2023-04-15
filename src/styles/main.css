@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Pacifico&family=Roboto:wght@300&display=swap");
+.call_to_action, #main .main-container .section .section_wrapper .text a, #main .main-container .cta .cta_wrapper a {
+  color: #fff;
+  background: #9733ee;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bolder;
+  font-family: Roboto; }
+  .call_to_action:hover, #main .main-container .section .section_wrapper .text a:hover, #main .main-container .cta .cta_wrapper a:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+
+#main {
+  color: #1e1c1c;
+  background: #fff;
+  font-family: Montserrat;
+  position: relative;
+  z-index: 4;
+  margin-top: -10px !important; }
+  @media only screen and (min-width: 650px) {
+    #main {
+      padding-top: 40px; } }
+  @media only screen and (min-width: 768px) {
+    #main {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    #main {
+      font-size: 23px; } }
+  @media only screen and (min-width: 1300px) {
+    #main {
+      font-size: 2vw;
+      margin-top: -40px !important; } }
+  #main .main-container .section .section_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; }
+    @media only screen and (min-width: 650px) {
+      #main .main-container .section .section_wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 66px; } }
+    #main .main-container .section .section_wrapper .text {
+      padding: 20px;
+      text-align: center; }
+      @media only screen and (min-width: 650px) {
+        #main .main-container .section .section_wrapper .text {
+          text-align: left;
+          margin-left: 30px;
+          padding: 0; } }
+      @media only screen and (min-width: 1300px) {
+        #main .main-container .section .section_wrapper .text {
+          padding: 5% 10%; } }
+      #main .main-container .section .section_wrapper .text h2 {
+        margin: 18px auto;
+        text-align: center;
+        font-weight: bold;
+        line-height: 37px; }
+        @media only screen and (min-width: 650px) {
+          #main .main-container .section .section_wrapper .text h2 {
+            text-align: left;
+            line-height: 35px; } }
+      #main .main-container .section .section_wrapper .text p {
+        line-height: 29px; }
+      @media only screen and (min-width: 1300px) {
+        #main .main-container .section .section_wrapper .text a {
+          padding: 2%;
+          margin-top: 2%;
+          border-radius: 0.5em; } }
+  #main .main-container .section2 {
+    background: url("./../images/official/official-purple-cropped.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    @media only screen and (min-width: 650px) {
+      #main .main-container .section2 .section_wrapper {
+        padding-bottom: 110px; } }
+    @media only screen and (min-width: 768px) {
+      #main .main-container .section2 .section_wrapper {
+        padding-bottom: 20%; } }
+    @media only screen and (min-width: 1024px) {
+      #main .main-container .section2 .section_wrapper .text p {
+        line-height: 39px; } }
+    @media only screen and (min-width: 1300px) {
+      #main .main-container .section2 .section_wrapper .text p {
+        line-height: 162%; } }
+    @media only screen and (min-width: 1024px) {
+      #main .main-container .section2 .section_wrapper .text h2 {
+        line-height: 49px; } }
+    @media only screen and (min-width: 1300px) {
+      #main .main-container .section2 .section_wrapper .text h2 {
+        line-height: 122%; } }
+  #main .main-container .section3 {
+    background: linear-gradient(#da22ff, #9733ee);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    margin-top: -10px !important; }
+    @media only screen and (min-width: 650px) {
+      #main .main-container .section3 {
+        margin-top: -115px; } }
+    @media only screen and (min-width: 768px) {
+      #main .main-container .section3 {
+        padding: 0px; } }
+    @media only screen and (min-width: 1300px) {
+      #main .main-container .section3 {
+        margin-top: -18%;
+        height: unset; } }
+    #main .main-container .section3 h2 {
+      margin: 0px auto 20px;
+      padding: 10px 0 0 0; }
+    #main .main-container .section3 .grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media only screen and (min-width: 768px) {
+        #main .main-container .section3 .grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 25px;
+          padding: 0px 40px; } }
+      @media only screen and (min-width: 1300px) {
+        #main .main-container .section3 .grid {
+          margin-top: 9%;
+          grid-column-gap: 5%;
+          padding: 0px 7%; } }
+      #main .main-container .section3 .grid .box {
+        background: #fff;
+        color: #1e1c1c;
+        padding: 10px 60px;
+        margin: 20px;
+        border-radius: 5px;
+        width: 100%; }
+        @media only screen and (min-width: 768px) {
+          #main .main-container .section3 .grid .box {
+            height: 320px;
+            height: 100%;
+            padding: 20% 15%;
+            margin: 40px 0px -30px;
+            border-radius: 35px 35px 0 0; } }
+        @media only screen and (min-width: 1024px) {
+          #main .main-container .section3 .grid .box {
+            padding: 30% 15%;
+            margin: 40px 0px -20px;
+            border-radius: 10% 10% 0 0; } }
+        @media only screen and (min-width: 1300px) {
+          #main .main-container .section3 .grid .box {
+            height: unset;
+            height: 100%;
+            padding: 20% 20%;
+            margin: 0; } }
+        #main .main-container .section3 .grid .box h3 {
+          margin: 20px auto;
+          color: #da22ff;
+          font-weight: bolder; }
+          @media only screen and (min-width: 1300px) {
+            #main .main-container .section3 .grid .box h3 {
+              margin: 15% auto; } }
+        #main .main-container .section3 .grid .box p {
+          margin: 20px auto;
+          line-height: 23px; }
+          @media only screen and (min-width: 1300px) {
+            #main .main-container .section3 .grid .box p {
+              line-height: 115%; } }
+  #main .main-container .languages {
+    padding: 25px 0px; }
+    @media only screen and (min-width: 768px) {
+      #main .main-container .languages {
+        margin: 7% auto; } }
+    #main .main-container .languages h2 {
+      text-align: center;
+      margin: 10px auto 40px;
+      color: #9733ee;
+      font-weight: bold; }
+    #main .main-container .languages .languages-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #main .main-container .languages .languages-wrapper .languages-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 100px);
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px; }
+        @media only screen and (min-width: 650px) {
+          #main .main-container .languages .languages-wrapper .languages-container {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10%; } }
+        @media only screen and (min-width: 768px) {
+          #main .main-container .languages .languages-wrapper .languages-container {
+            gap: 10%;
+            margin: 40px 50px 40px; } }
+        @media only screen and (min-width: 1024px) {
+          #main .main-container .languages .languages-wrapper .languages-container {
+            padding: 5%; } }
+        #main .main-container .languages .languages-wrapper .languages-container .language {
+          width: 90px;
+          margin: 10px auto; }
+          @media only screen and (min-width: 1024px) {
+            #main .main-container .languages .languages-wrapper .languages-container .language {
+              width: 40%; } }
+  #main .main-container .features {
+    margin: 50px auto;
+    padding: 40px auto; }
+    #main .main-container .features h2 {
+      color: #9733ee;
+      text-align: center;
+      margin: 30px auto; }
+    #main .main-container .features .grid-container .grid-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media only screen and (min-width: 768px) {
+        #main .main-container .features .grid-container .grid-box {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          overflow: hidden;
+          margin: 70px auto; } }
+      @media only screen and (min-width: 1024px) {
+        #main .main-container .features .grid-container .grid-box {
+          margin: 10% auto; } }
+      #main .main-container .features .grid-container .grid-box img {
+        width: 200px;
+        margin: 20px auto; }
+        @media only screen and (min-width: 1024px) {
+          #main .main-container .features .grid-container .grid-box img {
+            width: 40%; } }
+      #main .main-container .features .grid-container .grid-box .text {
+        background: #da22ff;
+        color: #fff;
+        text-align: center;
+        margin: 40px 20px;
+        padding: 30px 20px;
+        border-radius: 5px;
+        width: 95%; }
+        @media only screen and (min-width: 768px) {
+          #main .main-container .features .grid-container .grid-box .text {
+            width: unset;
+            margin-left: -20px;
+            padding: 30px 65px;
+            grid-row: 1/2; } }
+        @media only screen and (min-width: 1024px) {
+          #main .main-container .features .grid-container .grid-box .text {
+            padding: 10%; } }
+        @media only screen and (min-width: 1300px) {
+          #main .main-container .features .grid-container .grid-box .text {
+            border-radius: 0 2% 2% 0; } }
+        #main .main-container .features .grid-container .grid-box .text h3 {
+          font-weight: bolder;
+          margin: 15px auto 30px; }
+          @media only screen and (min-width: 1024px) {
+            #main .main-container .features .grid-container .grid-box .text h3 {
+              margin: 2% auto 5%; } }
+    @media only screen and (min-width: 768px) {
+      #main .main-container .features .grid-container .even img {
+        grid-row: 1/2; } }
+    #main .main-container .features .grid-container .even .text {
+      background: #9733ee; }
+      @media only screen and (min-width: 768px) {
+        #main .main-container .features .grid-container .even .text {
+          margin-right: -20px; } }
+      @media only screen and (min-width: 1300px) {
+        #main .main-container .features .grid-container .even .text {
+          border-radius: 2% 0 0 2%; } }
+  #main .main-container .benefits {
+    text-align: center;
+    margin: 40px auto;
+    color: #fff; }
+    @media only screen and (min-width: 768px) {
+      #main .main-container .benefits {
+        margin: 100px auto; } }
+    @media only screen and (min-width: 1024px) {
+      #main .main-container .benefits {
+        margin: 10% auto; } }
+    #main .main-container .benefits h2 {
+      color: #9733ee;
+      font-weight: bolder;
+      padding: 0px 35px;
+      margin: 20px auto 40px; }
+    #main .main-container .benefits .steps {
+      background: linear-gradient(#9733ee, #da22ff);
+      border-radius: 5px;
+      margin: 20px; }
+      @media only screen and (min-width: 768px) {
+        #main .main-container .benefits .steps {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); } }
+      @media only screen and (min-width: 1024px) {
+        #main .main-container .benefits .steps {
+          margin: 5% 5%; } }
+      @media only screen and (min-width: 1300px) {
+        #main .main-container .benefits .steps {
+          border-radius: 15px; } }
+      #main .main-container .benefits .steps .step {
+        padding: 30px 20px;
+        border-radius: inherit; }
+        @media only screen and (min-width: 768px) {
+          #main .main-container .benefits .steps .step {
+            padding: 60px 40px; } }
+        @media only screen and (min-width: 1024px) {
+          #main .main-container .benefits .steps .step {
+            padding: 20% 10%; } }
+        @media only screen and (min-width: 1300px) {
+          #main .main-container .benefits .steps .step {
+            padding: 25% 15%; } }
+        #main .main-container .benefits .steps .step:hover {
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
+        #main .main-container .benefits .steps .step h3 {
+          margin: 10px; }
+          @media only screen and (min-width: 768px) {
+            #main .main-container .benefits .steps .step h3 {
+              margin: 20px; } }
+      #main .main-container .benefits .steps .step1 {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
+        @media only screen and (min-width: 768px) {
+          #main .main-container .benefits .steps .step1 {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0; } }
+      #main .main-container .benefits .steps .step2 {
+        border-radius: 0; }
+      #main .main-container .benefits .steps .step3 {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
+        @media only screen and (min-width: 768px) {
+          #main .main-container .benefits .steps .step3 {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0; } }
+  #main .main-container .projects {
+    margin: 20px auto;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      #main .main-container .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (min-width: 1024px) {
+      #main .main-container .projects {
+        margin: 10% auto 5%; } }
+    #main .main-container .projects h2 {
+      color: #9733ee;
+      padding: 10px 30px; }
+      @media only screen and (min-width: 768px) {
+        #main .main-container .projects h2 {
+          padding: 20px 95px 60px; } }
+    #main .main-container .projects .projects-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto; }
+      @media only screen and (min-width: 768px) {
+        #main .main-container .projects .projects-wrapper {
+          display: grid;
+          grid-template-columns: repeat(2, 250px);
+          grid-row-gap: 30px; } }
+      @media only screen and (min-width: 1024px) {
+        #main .main-container .projects .projects-wrapper {
+          grid-template-columns: repeat(4, 250px);
+          margin: 5% 0%;
+          padding: 0 10%; } }
+      @media only screen and (min-width: 1300px) {
+        #main .main-container .projects .projects-wrapper {
+          grid-template-columns: repeat(4, 3fr);
+          grid-column-gap: 3%;
+          margin-left: -3%; } }
+      #main .main-container .projects .projects-wrapper .project {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(#da22ff, #9733ee);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        margin: 10px auto;
+        border-radius: 5px; }
+        @media only screen and (min-width: 1300px) {
+          #main .main-container .projects .projects-wrapper .project {
+            width: 17vw;
+            height: 17vw;
+            border-radius: 15px; } }
+        #main .main-container .projects .projects-wrapper .project:hover .overlay {
+          top: 0; }
+        #main .main-container .projects .projects-wrapper .project .overlay {
+          height: 100%;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.8);
+          position: relative;
+          top: 100%;
+          transition: 0.5s ease; }
+          #main .main-container .projects .projects-wrapper .project .overlay a {
+            color: #fff;
+            display: block;
+            padding: 90px 0px;
+            font-weight: bold; }
+            @media only screen and (min-width: 768px) {
+              #main .main-container .projects .projects-wrapper .project .overlay a {
+                padding: 40% 0px; } }
+      #main .main-container .projects .projects-wrapper .project1 {
+        background: url("./../images/projects/theoffcampus.jpeg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat; }
+      #main .main-container .projects .projects-wrapper .project2 {
+        background: url("./../images/projects/taxifare.png");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat; }
+      #main .main-container .projects .projects-wrapper .project3 {
+        background: url("./../images/projects/zamazungu.png");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat; }
+      #main .main-container .projects .projects-wrapper .project4 {
+        background: url("./../images/projects/nelisiwe.jpg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat; }
+  #main .main-container .cta {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px 20px; }
+    @media only screen and (min-width: 650px) {
+      #main .main-container .cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (min-width: 1024px) {
+      #main .main-container .cta {
+        padding: 0% 10% 5%; } }
+    #main .main-container .cta h2 {
+      margin: 20px auto;
+      padding: 0px 30px; }
+    #main .main-container .cta .cta_wrapper {
+      display: flex;
+      flex-direction: column; }
+      @media only screen and (min-width: 650px) {
+        #main .main-container .cta .cta_wrapper {
+          flex-direction: row;
+          align-items: center; } }
+      @media only screen and (min-width: 1300px) {
+        #main .main-container .cta .cta_wrapper {
+          justify-content: space-around;
+          width: 90%;
+          margin-top: 5%; } }
+      @media only screen and (min-width: 650px) {
+        #main .main-container .cta .cta_wrapper h3 {
+          margin: 20px 30px; } }
+      @media only screen and (min-width: 1300px) {
+        #main .main-container .cta .cta_wrapper a {
+          padding: 2% 4%;
+          border-radius: 1vw; } }
+
+/*# sourceMappingURL=main.css.map */

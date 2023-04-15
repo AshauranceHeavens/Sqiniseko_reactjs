@@ -1,0 +1,7 @@
+export const SEARCH_ACCOMMODATION = 'SEARCH_ACCOMMODATION';
+export const GET_ACCOMMODATION = 'GET_ACCOMMODATION';
+export const GET_ACCOMMODATION_ERROR = 'GET_ACCOMMODATION_ERROR';
+export const LOG_IN = 'LOG_IN';
+export const LOG_OUT = 'LOG_OUT';
+export const SIGNUP = 'SIGNUP';
+export const FORGOT_PWD = 'FORGOT_PWD';

@@ -1,0 +1,109 @@
+@import "./_constants";
+
+.about-container {
+  text-align: center;
+  color: $accent;
+
+  @include tablet {
+    font-size: 22px;
+  }
+
+  @include desktop {
+    font-size: 25px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile-landscape {
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+    }
+  }
+
+  .grid-p {
+    padding: 5% 10%;
+
+    @include mobile-landscape {
+      padding: unset;
+      text-align: left;
+      width: 35%;
+    }
+  }
+
+  .out-grid-p {
+    margin: 20px 0px;
+    padding: 0 25px;
+
+    @include mobile-landscape {
+      padding: 0px 87px;
+    }
+
+    @include tablet {
+      padding: 0px 120px;
+      margin: 40px 0px;
+    }
+
+    @include desktop {
+      padding: 0px 160px;
+      margin: 40px 0px;
+    }
+  }
+
+  .img {
+    width: 210px;
+    margin-bottom: 20px;
+
+    @include mobile-landscape {
+      width: 190px;
+    }
+  }
+
+  .about-pink {
+    background: $primary;
+    transform: skewY(-2deg);
+    padding: 60px 0px;
+    color: $accent;
+    text-align: center;
+
+    .about-pink-container {
+      transform: skewY(2deg);
+
+      .about-pink-grid {
+        p {
+          @extend .grid-p;
+        }
+      }
+
+      p {
+        @extend .out-grid-p;
+      }
+    }
+  }
+
+  .about-green {
+    background: $complimentary;
+    padding: 120px 0px 50px;
+    margin-top: -50px;
+
+    .about-green-container {
+      .about-green-grid {
+        @include mobile-landscape {
+          flex-direction: row;
+        }
+
+        p {
+          @extend .grid-p;
+        }
+      }
+      p {
+        @extend .out-grid-p;
+      }
+    }
+  }
+}

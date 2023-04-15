@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Pacifico&family=Roboto:wght@300&display=swap");
+
+$primary: #da22ff;
+$complimentary: #9733ee;
+$accent: #fff;
+$black: #1e1c1c;
+$grey: #f3f3f3;
+
+$Roboto: Roboto;
+$Montserrat: Montserrat;
+$Pacifico: Pacifico;
+
+@mixin mobile-landscape {
+  @media only screen and (min-width: 650px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media only screen and (min-width: 1300px) {
+    @content;
+  }
+}

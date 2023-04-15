@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Pacifico&family=Roboto:wght@300&display=swap");
+.footer {
+  font-family: Montserrat; }
+  @media only screen and (min-width: 1024px) {
+    .footer {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 1300px) {
+    .footer {
+      font-size: 1.7em; } }
+  .footer .footer-container {
+    background: #4c1a77;
+    text-align: center;
+    padding: 20px 0; }
+    .footer .footer-container ul li {
+      margin: 2px 5px;
+      list-style-type: none; }
+      @media only screen and (min-width: 1024px) {
+        .footer .footer-container ul li {
+          margin: 1.2%; } }
+      .footer .footer-container ul li span {
+        display: flex;
+        align-items: center; }
+        .footer .footer-container ul li span img {
+          width: 1em;
+          margin: 0px 5px; }
+      .footer .footer-container ul li a {
+        color: #fff;
+        text-decoration: none; }
+    .footer .footer-container p {
+      color: #fff;
+      padding: 10px 0px; }
+      .footer .footer-container p a {
+        color: #fff;
+        text-decoration: none; }
+
+/*# sourceMappingURL=footer.css.map */

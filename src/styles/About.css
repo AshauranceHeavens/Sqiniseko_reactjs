@@ -1,0 +1,64 @@
+.about-container {
+  text-align: center;
+  color: #fff; }
+  @media only screen and (min-width: 768px) {
+    .about-container {
+      font-size: 22px; } }
+  @media only screen and (min-width: 1024px) {
+    .about-container {
+      font-size: 25px; } }
+  .about-container .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (min-width: 650px) {
+      .about-container .grid {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center; } }
+  .about-container .grid-p, .about-container .about-pink .about-pink-container .about-pink-grid p, .about-container .about-green .about-green-container .about-green-grid p {
+    padding: 5% 10%; }
+    @media only screen and (min-width: 650px) {
+      .about-container .grid-p, .about-container .about-pink .about-pink-container .about-pink-grid p, .about-container .about-green .about-green-container .about-green-grid p {
+        padding: unset;
+        text-align: left;
+        width: 35%; } }
+  .about-container .out-grid-p, .about-container .about-pink .about-pink-container p, .about-container .about-green .about-green-container p {
+    margin: 20px 0px;
+    padding: 0 25px; }
+    @media only screen and (min-width: 650px) {
+      .about-container .out-grid-p, .about-container .about-pink .about-pink-container p, .about-container .about-green .about-green-container p {
+        padding: 0px 87px; } }
+    @media only screen and (min-width: 768px) {
+      .about-container .out-grid-p, .about-container .about-pink .about-pink-container p, .about-container .about-green .about-green-container p {
+        padding: 0px 120px;
+        margin: 40px 0px; } }
+    @media only screen and (min-width: 1024px) {
+      .about-container .out-grid-p, .about-container .about-pink .about-pink-container p, .about-container .about-green .about-green-container p {
+        padding: 0px 160px;
+        margin: 40px 0px; } }
+  .about-container .img {
+    width: 210px;
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 650px) {
+      .about-container .img {
+        width: 190px; } }
+  .about-container .about-pink {
+    background: #f88383;
+    transform: skewY(-2deg);
+    padding: 60px 0px;
+    color: #fff;
+    text-align: center; }
+    .about-container .about-pink .about-pink-container {
+      transform: skewY(2deg); }
+  .about-container .about-green {
+    background: #51d88b;
+    padding: 120px 0px 50px;
+    margin-top: -50px; }
+    @media only screen and (min-width: 650px) {
+      .about-container .about-green .about-green-container .about-green-grid {
+        flex-direction: row; } }
+
+/*# sourceMappingURL=About.css.map */

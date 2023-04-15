@@ -1,0 +1,78 @@
+@import "./_constants";
+
+.contacts-page-container {
+  color: $accent;
+  font-family: $Montserrat;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px $black;
+  background-color: $primary;
+  transform: skewY(-2deg);
+  padding: 40px 20px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  .form-container {
+    transform: skewY(2deg);
+
+    form {
+      // padding: 0px 20px;
+      margin: 0px 20px;
+
+      .form-grid {
+        @include mobile-landscape {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          padding: 0px 40px;
+        }
+        @include desktop {
+          padding: 0px 60px;
+        }
+      }
+
+      .form-div {
+        @include mobile-landscape {
+          padding: 0px 5%;
+          margin: 10px auto;
+        }
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .label,
+        .input {
+          margin: 2px 0px;
+          border-radius: 5px;
+          padding: 5px 0px;
+          border: none;
+          width: 100%;
+        }
+        .input {
+          color: $black;
+          padding: 5px 5px;
+          font-weight: bold;
+          height: 40px;
+        }
+        .input[type="file"] {
+          color: $black;
+        }
+        textarea {
+          height: 140px !important;
+        }
+      }
+      .button {
+        padding: 10px 20px;
+        margin: 10px auto;
+        background: $complimentary;
+        color: $accent;
+        text-shadow: 0px 0px 3px $black;
+      }
+    }
+  }
+}
