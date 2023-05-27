@@ -4,6 +4,7 @@ import "./index.css";
 import "./styles/main.css";
 import "./styles/footer.css";
 import "./styles/header.css";
+import "bootstrap-icons/font/bootstrap-icons.min.css";
 
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";

@@ -137,7 +137,7 @@
         color: #1e1c1c;
         padding: 10px 60px;
         margin: 20px;
-        border-radius: 5px;
+        border-radius: 1em;
         width: 100%; }
         @media only screen and (min-width: 768px) {
           #main .main-container .section3 .grid .box {
@@ -145,17 +145,16 @@
             height: 100%;
             padding: 20% 15%;
             margin: 40px 0px -30px;
-            border-radius: 35px 35px 0 0; } }
+            border-radius: 1em 1em 0 0; } }
         @media only screen and (min-width: 1024px) {
           #main .main-container .section3 .grid .box {
             padding: 30% 15%;
-            margin: 40px 0px -20px;
-            border-radius: 10% 10% 0 0; } }
+            padding: 4em 1.5em;
+            margin: 40px 0px -20px; } }
         @media only screen and (min-width: 1300px) {
           #main .main-container .section3 .grid .box {
             height: unset;
             height: 100%;
-            padding: 20% 20%;
             margin: 0; } }
         #main .main-container .section3 .grid .box h3 {
           margin: 20px auto;

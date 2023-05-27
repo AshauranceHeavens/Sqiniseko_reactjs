@@ -46,17 +46,7 @@
 
   .main-container {
     .section {
-      // &:after {
-      //   content: "";
-      //   display: inline-block;
-      //   position: relative;
-      //   width: 100vw;
-      //   height: 30vw;
-      //   background: url("./../images/small-path.svg");
-      //   background-position: center;
-      //   background-repeat: no-repeat;
-      //   background-size: contain;
-      // }
+    
       .section_wrapper {
         display: flex;
         flex-direction: column;
@@ -199,7 +189,8 @@
           color: $black;
           padding: 10px 60px;
           margin: 20px;
-          border-radius: 5px;
+          // border-radius: 5px;
+          border-radius: 1em ;
           width: 100%;
 
           @include tablet {
@@ -208,20 +199,22 @@
             // padding: 35px 20px;
             padding: 20% 15%;
             margin: 40px 0px -30px;
-            border-radius: 35px 35px 0 0;
+            // border-radius: 35px 35px 0 0;
+            border-radius: 1em 1em 0 0;
           }
 
           @include desktop {
             // padding: 35px 40px;
             padding: 30% 15%;
+            padding: 4em 1.5em;
             margin: 40px 0px -20px;
-            border-radius: 10% 10% 0 0;
+            // border-radius: 10% 10% 0 0;
           }
 
           @include large-desktop {
             height: unset;
             height: 100%;
-            padding: 20% 20%;
+            // padding: 20% 20%;
             margin: 0;
           }
 

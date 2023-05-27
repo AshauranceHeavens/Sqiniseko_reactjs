@@ -11,13 +11,16 @@
 
   @include desktop {
     font-size: 23px;
+    height:100vh;
   }
 
   .header-wrapper {
-    background: url("./../images/official/official-white-cropped.svg");
-    background-position: bottom;
+    background: url("./../images/official/official-white-cropped.svg"),
+           url("./../images/assets/linuxbackground.png");
+    background-position: bottom, center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain, cover;
+    height:100%;
 
     .nav {
       display: flex;
@@ -25,13 +28,18 @@
       align-items: center;
       padding: 7px;
 
+      @include mobile-landscape{
+        padding:7px 4em;
+      }
+      
       @include tablet {
-        padding: 17px 25px;
+        // padding: 17px 25px;
+        padding:1em 4em;
         font-size: 20px;
       }
 
       @include large-desktop {
-        padding: 1% 2%;
+        padding: 2% 10%;
         // font-size: 1.7em;
         // font-size: 180%;
         font-size: 2vw;
@@ -169,6 +177,7 @@
                 }
               }
             }
+            
           }
         }
       }
@@ -179,7 +188,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height:100%;
 
+      @include desktop{
+        display: block;
+      }
+      
       .hero-wrapper {
         width: 65%;
         display: flex;

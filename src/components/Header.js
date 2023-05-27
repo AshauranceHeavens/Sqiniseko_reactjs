@@ -72,7 +72,9 @@ const Header = ({ title }) => {
                     Custom Web Designs That Stand Out From The Rest
                   </h1>
                   <p className="subheading stagger1">No More Boring Websites</p>
-                  <a href="" className="stagger1">
+                  <a
+                    href="https://calendly.com/ashaurance/30min"
+                    className="stagger1">
                     Schedule An Appointment
                   </a>
                 </>

@@ -60,7 +60,9 @@ const Main = () => {
                 websites at an affordable price for people and businesses like
                 yours.
               </p>
-              <a href="mailto:ashaurance@gmail.com">Schedule An Appointment</a>
+              <a href="https://calendly.com/ashaurance/30min">
+                Schedule An Appointment
+              </a>
             </div>
           </div>
         </div>
@@ -70,8 +72,8 @@ const Main = () => {
             <div className="box">
               <h3>24/7</h3>
               <p>
-                A beautiful and custom engagin website that increases engagement
-                and generate leads 24/7
+                A beautiful and custom engaging website that increases
+                engagement and generate leads 24/7
               </p>
             </div>
             <div className="box">
@@ -219,7 +221,9 @@ const Main = () => {
           <h2>You will be relieved from actively searching for new clients</h2>
           <div className="cta_wrapper">
             <h3>Make An Appointment</h3>
-            <a href="tel:+27766900423">Schedule An Appointment</a>
+            <a href="https://calendly.com/ashaurance/30min">
+              Schedule An Appointment
+            </a>
           </div>
         </div>
       </div>

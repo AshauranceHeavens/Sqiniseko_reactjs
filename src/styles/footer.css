@@ -20,7 +20,10 @@
           margin: 1.2%; } }
       .footer .footer-container ul li span {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        color: white; }
+        .footer .footer-container ul li span i {
+          margin: 0 .2em; }
         .footer .footer-container ul li span img {
           width: 1em;
           margin: 0px 5px; }

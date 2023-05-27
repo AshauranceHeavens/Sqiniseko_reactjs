@@ -9,12 +9,14 @@ const Footer = () => {
         <ul>
           <li>
             <span>
-              <img src={phone} alt="phone" />
+              {/* <img src={phone} alt="phone" /> */}
+              <i className="bi-phone"></i>
               <a href="tel:+27766900423">Phone</a>
             </span>
           </li>
           <li>
             <span>
+              <i className="bi-whatsapp"></i>
               <a
                 href="https://wa.me/27766900423/?text=Hi%20Sqiniseko%20I%20got%20your%20number%20from%20your%20web%20profile"
                 target="_blank">
@@ -24,7 +26,8 @@ const Footer = () => {
           </li>
           <li>
             <span>
-              <img src={email} alt="email" />
+              {/* <img src={email} alt="email" /> */}
+              <i className="bi-envelope"></i>
               <a href="mailto:ashaurance@gmail.com" target="_blank">
                 Email
               </a>
